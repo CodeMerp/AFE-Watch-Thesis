@@ -482,7 +482,7 @@ class BackgroundService : Service(), ConnectionObserver {
     // ------------------- API parts -------------------
     private fun sendFallToServer(preferenceData: MyPreferenceData, fallStatus: Int) {
         val client = OkHttpClient()
-        val url = "https://sepawplus-production.up.railway.app/api/sentFall"
+        val url = "https://afe-plus-ultra-production.up.railway.app/api/sentFall"
         val jsonBody = """
             {
                 "users_id": "${preferenceData.getUserId()}",
@@ -520,7 +520,7 @@ class BackgroundService : Service(), ConnectionObserver {
 
     private fun sendHeartRateToServer(preferenceData: MyPreferenceData) {
         val client = OkHttpClient()
-        val url = "https://sepawplus-production.up.railway.app/api/sentHeartRate"
+        val url = "https://afe-plus-ultra-production.up.railway.app/api/sentHeartRate"
         val body = """
             {
                 "uId": "${preferenceData.getUserId()}",
@@ -607,7 +607,7 @@ class BackgroundService : Service(), ConnectionObserver {
 
     private fun sendTemperatureToServer(preferenceData: MyPreferenceData) {
         val client = OkHttpClient()
-        val url = "https://sepawplus-production.up.railway.app/api/sentTemperature"
+        val url = "https://afe-plus-ultra-production.up.railway.app/api/sentTemperature"
 
         val body = """
             {
@@ -643,7 +643,7 @@ class BackgroundService : Service(), ConnectionObserver {
     // ==== CHANGED: ส่งตำแหน่งด้วย JSON + PUT ให้เหมือน sendTemperatureToServer ====
     private fun requestOkHttpClient(preferenceData: MyPreferenceData) {
         val client = OkHttpClient()
-        val url = "https://sepawplus-production.up.railway.app/api/sentlocation"
+        val url = "https://afe-plus-ultra-production.up.railway.app/api/sentlocation"
 
         val body = """
             {

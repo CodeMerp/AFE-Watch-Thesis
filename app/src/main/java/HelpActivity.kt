@@ -130,7 +130,7 @@ class HelpActivity : Activity() {
     private fun sendFallToServer(preferenceData: MyPreferenceData, fallStatus: Int) {
         Log.d("FALL_API", "ส่งข้อมูลการล้มไป backend (status: $fallStatus)")
         val client = OkHttpClient()
-        val url = "https://sepawplus-production.up.railway.app/api/sentFall"
+        val url = "https://afe-plus-ultra-production.up.railway.app/api/sentFall"
         val jsonBody = """
             {
                 "users_id": "${preferenceData.getUserId()}",

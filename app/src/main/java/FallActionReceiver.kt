@@ -35,7 +35,7 @@ class FallActionReceiver : BroadcastReceiver() {
 
         // ส่งไปหลังบ้าน (ตามฟอร์แมตเดียวกับ HelpActivity)
         val client = OkHttpClient()
-        val url = "https://sepawplus-production.up.railway.app/api/sentFall"
+        val url = "https://afe-plus-ultra-production.up.railway.app/api/sentFall"
         val jsonBody = """
         {
             "users_id": "${pref.getUserId()}",

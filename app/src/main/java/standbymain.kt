@@ -315,7 +315,7 @@ class standbymain : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvid
 
 //    private fun sendTemperatureToServer(preferenceData: MyPreferenceData) {
 //        val client = OkHttpClient()
-//        val url = "https://sepawplus-production.up.railway.app/api/sentTemperature"
+//        val url = "https://afe-plus-ultra-production.up.railway.app/api/sentTemperature"
 //
 //
 //        val body = """
@@ -503,7 +503,7 @@ class standbymain : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvid
     public fun requestOkHttpClient(preferenceData: MyPreferenceData) {
         try {
             val client = OkHttpClient()
-            val url = "https://sepawplus-production.up.railway.app/api/sentlocation"
+            val url = "https://afe-plus-ultra-production.up.railway.app/api/sentlocation"
             //val mediaType = "application/json".toMediaType()
             val body = """
     {
@@ -593,7 +593,7 @@ class standbymain : FragmentActivity(), AmbientModeSupport.AmbientCallbackProvid
     //Private
     fun requestSOS(uId: String): Int {
         val client = OkHttpClient()
-        val url = "https://sepawplus-production.up.railway.app/api/requestSOS"
+        val url = "https://afe-plus-ultra-production.up.railway.app/api/requestSOS"
 //        val body = MultipartBody.Builder().setType(MultipartBody.FORM)
 //            .addFormDataPart("uid",uId.toString())
 //            .build()
